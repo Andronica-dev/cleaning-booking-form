@@ -1,1 +1,79 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Pristine Clean – Cleaning Service Booking Form</h1>
+    <p id="description">Please complete this form to request a cleaning service. We will review your details and contact you to confirm the appointment.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Contact Details</legend>
+      <label id="name-label">Full name</label>
+      <input id="name" type="text" placeholder="Enter your full name" required/>
+            <label id="email-label">Email address </label>
+      <input  id="email" type="email" placeholder="example@email.com" required />
+      </fieldset>
+      <fieldset>
+        <legend>Service Details</legend>
+            <label id="number-label">How many rooms need cleaning?</label>
+      <input id="number" type="number" min="1" max="10" placeholder="eg. 3" />
+  <label for="dropdown">Type of Cleaning Service</label>
+
+  <select id="dropdown" name="service">
+    <option value="">Select a service</option>
+      <option value="home-cleaning">Home Cleaning</option>
+        <option value="office-cleaning">Office Cleaning</option>
+          <option value="deep-cleaning">Deep Cleaning</option>
+            <option value="move-cleaning">Move-In / Move-Out Cleaning</option>
+            </select>
+            </fieldset>
+<p>How often do you need cleaning?</p>
+
+<label>
+  <input type="radio" name="frequency" value="once">
+    One-time cleaning
+    </label>
+
+    <label>
+      <input type="radio" name="frequency" value="weekly">
+        Weekly
+        </label>
+
+        <label>
+          <input type="radio" name="frequency" value="monthly">
+            Monthly
+            </label>  
+            <p>Select additional services:</p>
+
+            <label>
+              <input type="checkbox" value="windows">
+                Window Cleaning
+                </label>
+
+                <label>
+                  <input type="checkbox" value="carpet">
+                    Carpet Cleaning
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="fridge">
+                        Fridge Cleaning
+                        </label>
+
+                        <label>
+                          <input type="checkbox" value="oven">
+                            Oven Cleaning
+                            </label>
+            <label for="comments">Additional Coments</label>
+            <textarea id="comments" name="commemts" placeholder="Tell us anything we should know about the cleaning job..."></textarea>
+            <button id="submit" type="submit">Book Now</butron>
+    </form>
+  </body>
+</html>
+
+** end of index.html
